@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 50vw;
+  height: 40vw;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.left-side {
+  height: 100%;
+  width: 50%;
+  margin: 25px 0px 0px 15px;
+  padding-bottom: 25px;
+}
+
+.right-side {
+  height: 100%;
+  width: 50%;
+  background-image: url(images/gym.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* *SOCIAL BUTTON* */
+
+.social-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 25%;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.s-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 35%;
+  border: #413fb5 solid 2px;
+  border-radius: 5px;
+}
+
+.social-button a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* *END OF SOCIAL BUTTON* */
+
+.line {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  margin-left: -15px;
+  font-size: 15px;
+}
+
+.hr {
+  width: 75px;
+  height: 1px;
+  background-color: black;
+}
+
+/* *INPUT* */
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  height: 10%;
+  width: 90%;
+  margin-top: 15px;
+}
+
+input[type="text"] {
+  height: 35px;
+  width: 50%;
+  border-radius: 5px;
+  border: lightgray 1px;
+  box-shadow: 0px 0px 7px rgba(100, 96, 106, 0.2);
+  padding-left: 10px;
+}
+
+/* *END OF INPUT* */
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20%;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+  height: 35px;
+  width: 90%;
+  border-radius: 5px;
+  border: lightgray 1px;
+  box-shadow: 0px 0px 7px rgba(100, 96, 106, 0.2);
+  padding-left: 10px;
+}
+
+.check a {
+  color: black;
+  text-decoration: underline solid #413fb5 3px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  /* margin-top: 5px; */
+}
+
+button {
+  background-color: #413fb5;
+  color: white;
+  height: 35px;
+  width: 90%;
+  border: #413fb5;
+  border-radius: 5px;
+  margin: 15px 0px;
+}
+
+h6 a {
+  color: black;
+  text-decoration: underline solid #413fb5 3px;
+  text-underline-position: under;
+}
+
+button:hover {
+  cursor: pointer;
+}
+/* .column {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 20px;
+} */
+
+/* input[type="email"],
+input[type="password"] {
+  height: 35px;
+  width: 93%;
+  border-radius: 5px;
+  border: lightgray 1px;
+  box-shadow: 0px 0px 7px rgba(100, 96, 106, 0.2);
+  padding-left: 10px;
+  margin-top: 20px;
+} */
