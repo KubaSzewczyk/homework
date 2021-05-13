@@ -95,11 +95,14 @@ function mostRentedCars(a) {
 let mostOftenRentedCars = rentalCarCompany.map(mostRentedCars)
 
 
-console.log(`Najczęściej wypożyczane auta w procentach: \n ${mostOftenRentedCars} `)
+console.log('Najczęściej wypożyczane auta w procentach:', mostOftenRentedCars )
 
+// rentalCarCompany.sort((a, b) => (a.allCarsNumber - a.carsToRent) <= (b.allCarsNumber - b.carsToRent) ? 1 : -1)
+// console.log(rentalCarCompany.sort())
 
-rentalCarCompany.sort((a, b) => (a.allCarsNumber - a.carsToRent) <= (b.allCarsNumber - b.carsToRent) ? 1 : -1)
-console.log(rentalCarCompany.sort())
-
-
-
+const sorted = rentalCarCompany.sort(function (a, b) {
+    return b.allCarsNumber / b.carsToRent - a.allCarsNumber / a.carsToRent
+})
+console.log(sorted)
+const sorted2 = sorted.slice(0, 3)
+console.log('Trzy najczęściej wynajmowane samochody to:', sorted2)
