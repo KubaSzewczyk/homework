@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 38vw;
+  width: 45%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 2px black solid;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  margin: 25px 0px 0px 15px;
+}
+
+.right-side {
+  width: 50%;
+  height: 100%;
+  background-image: url(images/gym.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 120px;
+  margin-top: 5px;
+}
+
+.facebook-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 93%;
+  border: 2px #413fb5 solid;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}
+
+.instagram-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 93%;
+  border: 2px #413fb5 solid;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}
+
+.facebook-button a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(51, 50, 50);
+  font-size: 12px;
+  margin-right: 5px;
+}
+.instagram-button a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(51, 50, 50);
+  font-size: 12px;
+}
+
+.facebook-button img {
+  margin-right: 20px;
+}
+
+.instagram-button img {
+  margin-right: 30px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -15px;
+  font-size: 13px;
+}
+
+.hr {
+  width: 75px;
+  height: 1px;
+  background-color: black;
+}
+
+.row {
+  display: flex;
+  margin-top: 15px;
+  margin-right: 10px;
+  justify-content: space-evenly;
+}
+
+input[type="text"] {
+  height: 35px;
+  width: 46.5%;
+  border-radius: 5px;
+  border: lightgray 1px;
+  box-shadow: 0px 0px 7px rgba(100, 96, 106, 0.2);
+  padding-left: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  height: 50%;
+  width: 93%;
+  border-radius: 5px;
+  border: lightgray 1px;
+  box-shadow: 0px 0px 7px rgba(100, 96, 106, 0.2);
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.check a {
+  color: black;
+  text-decoration: underline solid #413fb5 3px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #413fb5;
+  color: white;
+  height: 35px;
+  width: 93%;
+  border: #413fb5;
+  border-radius: 5px;
+}
+
+h6 a {
+  color: black;
+  text-decoration: underline solid #413fb5 3px;
+  text-underline-position: under;
+}
+
+button:hover {
+  cursor: pointer;
+}
