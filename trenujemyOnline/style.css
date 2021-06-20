@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,97 +10,75 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 15px;
+  overflow: hidden;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
-  height: 38vw;
-  width: 45%;
-  justify-content: flex-start;
-  align-items: flex-start;
-  border: 2px black solid;
+  width: 50vw;
+  height: 40vw;
+  border: 2px solid black;
   border-radius: 10px;
-  overflow: hidden;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .left-side {
-  display: flex;
-  flex-direction: column;
   height: 100%;
   width: 50%;
   margin: 25px 0px 0px 15px;
+  padding-bottom: 25px;
 }
 
 .right-side {
-  width: 50%;
   height: 100%;
+  width: 50%;
   background-image: url(images/gym.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: -1;
 }
+
+/* *SOCIAL BUTTON* */
 
 .social-button {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 120px;
-  margin-top: 5px;
+  align-items: flex-start;
+  height: 25%;
+  width: 100%;
+  margin-top: 15px;
 }
 
-.facebook-button {
+.s-button {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  height: 35px;
-  width: 93%;
-  border: 2px #413fb5 solid;
+  width: 90%;
+  height: 35%;
+  border: #413fb5 solid 2px;
   border-radius: 5px;
-  padding-bottom: 5px;
 }
 
-.instagram-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35px;
-  width: 93%;
-  border: 2px #413fb5 solid;
-  border-radius: 5px;
-  padding-bottom: 5px;
-}
-
-.facebook-button a {
+.social-button a {
   text-decoration: none;
-  font-weight: 700;
-  color: rgb(51, 50, 50);
-  font-size: 12px;
-  margin-right: 5px;
-}
-.instagram-button a {
-  text-decoration: none;
-  font-weight: 700;
-  color: rgb(51, 50, 50);
-  font-size: 12px;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
 }
 
-.facebook-button img {
-  margin-right: 20px;
-}
-
-.instagram-button img {
-  margin-right: 30px;
-}
+/* *END OF SOCIAL BUTTON* */
 
 .line {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
+  height: 10%;
   margin-left: -15px;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .hr {
@@ -108,39 +87,44 @@ body {
   background-color: black;
 }
 
+/* *INPUT* */
+
 .row {
   display: flex;
-  margin-top: 15px;
-  margin-right: 10px;
   justify-content: space-evenly;
+  height: 10%;
+  width: 90%;
+  margin-top: 15px;
 }
 
 input[type="text"] {
   height: 35px;
-  width: 46.5%;
+  width: 50%;
   border-radius: 5px;
   border: lightgray 1px;
   box-shadow: 0px 0px 7px rgba(100, 96, 106, 0.2);
   padding-left: 10px;
 }
+
+/* *END OF INPUT* */
 
 .column {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 20%;
-  justify-content: space-evenly;
-  margin-top: 20px;
+  width: 100%;
+  padding-bottom: 15px;
 }
 
 input[type="email"],
 input[type="password"] {
-  height: 50%;
-  width: 93%;
+  height: 35px;
+  width: 90%;
   border-radius: 5px;
   border: lightgray 1px;
   box-shadow: 0px 0px 7px rgba(100, 96, 106, 0.2);
   padding-left: 10px;
-  margin-top: 20px;
 }
 
 .check a {
@@ -150,15 +134,17 @@ input[type="password"] {
 
 input[type="checkbox"] {
   margin-right: 5px;
+  /* margin-top: 5px; */
 }
 
 button {
   background-color: #413fb5;
   color: white;
   height: 35px;
-  width: 93%;
+  width: 90%;
   border: #413fb5;
   border-radius: 5px;
+  margin: 15px 0px;
 }
 
 h6 a {
@@ -170,3 +156,22 @@ h6 a {
 button:hover {
   cursor: pointer;
 }
+/* .column {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 20px;
+} */
+
+/* input[type="email"],
+input[type="password"] {
+  height: 35px;
+  width: 93%;
+  border-radius: 5px;
+  border: lightgray 1px;
+  box-shadow: 0px 0px 7px rgba(100, 96, 106, 0.2);
+  padding-left: 10px;
+  margin-top: 20px;
+} */

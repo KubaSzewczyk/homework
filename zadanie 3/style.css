@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -179,3 +180,186 @@ input[type=password]
     outline: lightslategray;
 }
 
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: system-ui;
+}
+
+.nav{
+    background-color: darksalmon;
+    display: inline-block;
+    padding-top: 10px;
+    margin-bottom: -4px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+
+.head-left, 
+.head-right 
+{ 
+color: white;
+}
+
+.head-left{
+    float: left;
+    padding-left: 5px;
+    margin: 0px;
+}
+
+.head-left a:hover{ 
+    color: lightgray;
+}
+
+.head-right{
+    float: right;
+    padding-right: 100px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin: 0px;
+}
+
+.banner{
+    color: darksalmon;
+    display: block;
+    margin: 0px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 250px;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_548298907_9706479704500126_78156.jpg);
+}
+
+#container{
+    text-align: center;
+    margin: 0px;
+    padding-top: 30px;
+    
+    
+}
+.style{
+    color: lightslategray;
+}
+
+
+#content{
+display: block;
+margin-top: 30px;
+padding-top: 10px;
+margin-bottom: 30px;
+}
+
+.contentL{
+    background-color: linen;
+    height: 100px;
+    width: 350px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 30px;
+    text-align: center;
+    }
+
+.contentC{
+    height: 100px;
+    width: 350px;
+    background-color: linen;
+    margin-left: 25px;
+    margin-right: 25px;
+    float: left;
+    text-align: center;
+}
+
+.contentR{
+    height: 100px;
+    width: 350px;
+    background-color: linen;
+    float: right;
+    margin-right: 50px;
+    text-align: center;
+}
+
+
+.heading{
+    padding: 10px 5px 10px 5px;
+}
+
+#footer{
+    background-color: darksalmon;
+    display: inline-block;
+    margin-bottom: -3px;
+}
+
+.about-us{
+text-align: left;
+float: left;
+height: 300px;
+width: 33%;
+padding-top: 15px;
+padding-left: 10px;
+}
+
+.image{
+    height: 300px;
+    width: 34%;
+    float: left;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.login{
+    text-align: left;
+    float: left;
+    height: 300px;
+    width: 33%;
+    padding-top: 0px;
+    padding-left: 70px;
+}
+
+button{
+    background-color: black;
+    color:white;
+    height: 35px;
+    width: 90px;
+    font-size: small;
+    float: left;
+    margin-top: 10px;
+    }
+
+    button:hover{
+        opacity: 0.7;
+    }
+
+input[type=email],
+input[type=password]
+{    
+    display: block;
+    height: 30px;
+    width: 180px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.box{
+    transition: 0.5s ease;
+}
+.box:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+    border: 1px solid;
+    outline: lightslategray;
+}
+
+>>>>>>> 8c7c939a9fe8821758db3dea850be5590c8936d2
